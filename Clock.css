@@ -1,0 +1,10 @@
+body
+{
+    background: blue;
+}
+#hands
+{
+    width: 2px;
+    background: black;
+    height: 9px;
+}
