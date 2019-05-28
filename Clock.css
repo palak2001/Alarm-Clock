@@ -1,13 +1,13 @@
 body
 {
-    background: red;
+    background: url("https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjHt4Ga677iAhWDb30KHciODiMQjRx6BAgBEAU&url=https%3A%2F%2Fwpmisc.com%2Fwallpaper-433857&psig=AOvVaw3hzpQ98DVOosrm8rKJih01&ust=1559153790521083");
     display: flex;
     align-items: center;
 }
 .hands
 {
     width: 200px;
-    background: black;
+    background: white;
     height: 9px;
     top=50%;
 }
