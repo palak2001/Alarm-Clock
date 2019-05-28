@@ -1,6 +1,8 @@
 body
 {
     background: red;
+    display: flex;
+    align-items: center;
 }
 #hands
 {
