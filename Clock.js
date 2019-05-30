@@ -8,11 +8,12 @@ var secdegree= sectime*6+90;
 const mintime= now.getMinutes();
 var mindegree= mintime*6+90;
 const hrtime= now.getHours();
+console.log(hrtime);
 var hrdegree= hrtime*30+90;
 setInterval(function(){
     secdegree=secdegree+6;
     mindegree=mindegree+6/60;
-    hrdegree=hrdegree+30/3600;
+    hrdegree=hrdegree+1/120;
     second.style.transform= `rotate(${secdegree}deg)`;
     minute.style.transform= `rotate(${mindegree}deg)`;
     hour.style.transform= `rotate(${hrdegree}deg)`;
