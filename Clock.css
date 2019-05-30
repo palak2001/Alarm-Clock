@@ -1,22 +1,31 @@
 body
 {
-    background: rgb(255, 0, 106);
+    background: url("Clock.jpg");
+    background-position: inherit;
+    background-size: cover;
+    background-repeat: no-repeat;
     align-items: center;
+}
+.hands
+{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transform: translate(-130px,330px);
 }
 .second-hand
 {
-    width: 200px;
-    background: black;  
+    width: 250px;
+    background: rgb(155, 4, 4);  
     height: 3px;
     top: 50%;
     position: absolute;
-    transform: rotate(90deg);
     transform-origin: right;
-    transition: all 0.5s;
+    transition: all 1s;
 }
 .minute-hand
 {
-    width: 200px;
+    width: 250px;
     background: black;  
     height: 5px;
     top: 50%;
@@ -26,9 +35,10 @@ body
 }
 .hour-hand
 {
-    width: 200px;
+    width: 250px;
     background: black;  
-    height: 6px;
+    height: 7px;
+    scale: 20;
     top: 50%;
     position: absolute;
     transform: rotate(90deg);
