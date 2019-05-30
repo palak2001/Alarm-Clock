@@ -12,7 +12,7 @@ var hrdegree= hrtime*30+90;
 setInterval(function(){
     secdegree=secdegree+6;
     mindegree=mindegree+6/60;
-    hrdegree=hrdegree+6/3600;
+    hrdegree=hrdegree+30/3600;
     second.style.transform= `rotate(${secdegree}deg)`;
     minute.style.transform= `rotate(${mindegree}deg)`;
     hour.style.transform= `rotate(${hrdegree}deg)`;
