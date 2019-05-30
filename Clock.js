@@ -8,7 +8,7 @@ var secdegree= sectime*6+90;
 const mintime= now.getMinutes();
 var mindegree= mintime*6+90;
 const hrtime= now.getHours();
-var hrdegree= hrtime*6+90;
+var hrdegree= hrtime*30+90;
 setInterval(function(){
     secdegree=secdegree+6;
     mindegree=mindegree+6/60;
