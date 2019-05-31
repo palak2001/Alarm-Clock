@@ -6,6 +6,11 @@ body
     background-repeat: no-repeat;
     align-items: center;
 }
+input
+{
+    width: 20px;
+    text-align: center;
+}
 .hands
 {
     align-items: center;
