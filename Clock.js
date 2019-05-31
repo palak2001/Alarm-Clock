@@ -1,7 +1,10 @@
 const second= document.querySelector('.second-hand');
 const minute= document.querySelector('.minute-hand');
 const hour= document.querySelector('.hour-hand');
-console.log('hlo');
+const alarmsec= document.querySelector('.alarmsec');
+const alarmmin= document.querySelector('.alarmmin');
+const alarmhr= document.querySelector('.alarmhr');
+console.log('hey,I m palak');
 const now= new Date();
 const sectime= now.getSeconds();
 var secdegree= sectime*6+90;
@@ -17,6 +20,9 @@ setInterval(function(){
     second.style.transform= `rotate(${secdegree}deg)`;
     minute.style.transform= `rotate(${mindegree}deg)`;
     hour.style.transform= `rotate(${hrdegree}deg)`;
+    if(secdegree==alarmsec*6&&mindegree==alarmmin*6&&hrdegree==alarmhr*30)
+    {
+        const audio= new Audio('alarm.mp3');
+        audio.play();
+    }
 },1000);
-
-
